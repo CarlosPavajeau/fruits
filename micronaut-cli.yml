@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: example.micronaut
+testFramework: spock
+sourceLanguage: kotlin
+buildTool: gradle
+features: [annotation-api, app-name, graalvm, gradle, http-client, jackson-databind, kotlin, kotlin-application, kotlin-build, logback, micronaut-build, mongo-reactive, netty-server, reactor, reactor-http-client, readme, shade, spock, testcontainers, yaml]
