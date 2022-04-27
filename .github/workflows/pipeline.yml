@@ -96,19 +96,15 @@ jobs:
           name: build
           path: build
 
-      - name: generate docker file native with Gradle
+      - name: build docker image with Gradle
         uses: gradle/gradle-build-action@v2
         with:
-          arguments: dockerfileNative
+          arguments: dockerBuildNative
 
-      - name: build and push docker image
-        id: build-and-push
-        uses: docker/build-push-action@v2
+      - name: push docker image with Gradle
+        uses: gradle/gradle-build-action@v2
         with:
-          context: build
-          file: build/docker/native-main/DockerfileNative
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          arguments: dockerPushNative
 
       - name: sign the published docker image
         env:
