@@ -105,8 +105,3 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: dockerPushNative
-
-      - name: sign the published docker image
-        env:
-          COSIGN_EXPERIMENTAL: "true"
-        run: cosign sign ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
