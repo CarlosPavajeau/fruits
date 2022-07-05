@@ -1,23 +1,18 @@
 package example.micronaut
 
 import io.micronaut.core.annotation.Creator
-import io.micronaut.core.annotation.NonNull
-import io.micronaut.core.annotation.Nullable
-import io.micronaut.data.annotation.GeneratedValue
-import io.micronaut.data.annotation.Id
-import io.micronaut.data.annotation.MappedEntity
-import io.micronaut.serde.annotation.Serdeable
+import io.micronaut.core.annotation.Introspected
+import io.micronaut.core.annotation.ReflectiveAccess
+import org.bson.codecs.pojo.annotations.BsonCreator
+import org.bson.codecs.pojo.annotations.BsonProperty
+import javax.validation.constraints.NotBlank
 
-@MappedEntity
-@Serdeable
-data class Fruit @Creator constructor(
-    @field:NonNull @get:NonNull
-    @param:NonNull val name: String, @field:Nullable @get:Nullable
-    @param:Nullable var description: String?
+@Introspected
+@ReflectiveAccess
+data class Fruit @Creator @BsonCreator constructor(
+    @field:BsonProperty("name") @param:BsonProperty("name") @field:NotBlank val name: String,
+    @field:BsonProperty("description") @param:BsonProperty("description") var description: String?
 ) {
-    constructor(s: String) : this(s, "")
 
-    @Id
-    @GeneratedValue
-    var id: String? = null
+    constructor(name: String) : this(name, null)
 }

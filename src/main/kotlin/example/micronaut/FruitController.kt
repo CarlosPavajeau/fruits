@@ -9,14 +9,14 @@ import reactor.core.publisher.Mono
 import javax.validation.Valid
 
 @Controller("/fruits")
-open class FruitController(private val service: FruitService) {
+open class FruitController(private val fruitRepository: FruitRepository) {
 
     @Get
-    fun searchAll(): Publisher<Fruit> = service.list()
+    fun searchAll(): Publisher<Fruit> = fruitRepository.list()
 
     @Post
-    open fun save(fruit: Fruit): Mono<HttpStatus> {
-        return service.save(fruit)
-            .map { added: Boolean -> if (added) HttpStatus.CREATED else HttpStatus.BAD_REQUEST }
+    open fun save(@Valid fruit: Fruit): Mono<HttpStatus> {
+        return fruitRepository.save(fruit)
+            .map { added: Boolean -> if (added) HttpStatus.CREATED else HttpStatus.CONFLICT }
     }
 }

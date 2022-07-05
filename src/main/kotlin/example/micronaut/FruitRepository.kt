@@ -1,12 +1,12 @@
 package example.micronaut
 
-import io.micronaut.core.annotation.NonNull
-import io.micronaut.data.mongodb.annotation.MongoRepository
-import io.micronaut.data.repository.reactive.ReactiveStreamsCrudRepository
 import org.reactivestreams.Publisher
+import reactor.core.publisher.Mono
+import javax.validation.Valid
 
-@MongoRepository
-interface FruitRepository : ReactiveStreamsCrudRepository<Fruit, String> {
-    @NonNull
-    fun findByNameInList(@NonNull names: List<String>): Publisher<Fruit>
+interface FruitRepository {
+
+    fun list(): Publisher<Fruit>
+
+    fun save(@Valid fruit: Fruit): Mono<Boolean>
 }
