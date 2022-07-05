@@ -64,7 +64,7 @@ tasks {
         images = ["cantte/fruits:$project.version"]
     }
     dockerfileNative {
-        baseImage = "frolvlad/alpine-glibc"
+        baseImage = "frolvlad/alpine-glibc:glibc-2.35"
     }
 }
 graalvmNative.toolchainDetection = false
