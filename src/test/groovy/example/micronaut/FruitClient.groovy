@@ -11,8 +11,8 @@ import javax.validation.Valid
 interface FruitClient {
 
     @Post
-    HttpStatus save(@Valid Fruit fruit)
+    HttpStatus save(Fruit fruit)
 
     @Get
-    List<Fruit> searchAll()
+    Iterable<Fruit> searchAll()
 }
