@@ -7,7 +7,7 @@ plugins {
     id("io.micronaut.application") version "3.4.1"
 }
 
-version = "0.0.6"
+version = "0.0.7"
 group = "example.micronaut"
 
 repositories {
@@ -63,10 +63,8 @@ tasks {
     dockerBuildNative {
         images = ["cantte/fruits:$project.version"]
     }
-    dockerfileNative {
-        baseImage = "frolvlad/alpine-glibc:glibc-2.35"
-    }
 }
+
 graalvmNative.toolchainDetection = false
 micronaut {
     runtime("netty")
