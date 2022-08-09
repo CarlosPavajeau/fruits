@@ -7,7 +7,7 @@ plugins {
     id("io.micronaut.application") version "3.5.1"
 }
 
-version = "0.0.13"
+version = "0.1.1"
 group = "example.micronaut"
 
 repositories {
@@ -23,6 +23,7 @@ dependencies {
     implementation("io.micronaut.mongodb:micronaut-mongo-reactive")
     implementation("io.micronaut.reactor:micronaut-reactor")
     implementation("io.micronaut.reactor:micronaut-reactor-http-client")
+    implementation("io.micronaut.discovery:micronaut-discovery-client")
     implementation("jakarta.annotation:jakarta.annotation-api")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
