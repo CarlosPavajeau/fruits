@@ -15,3 +15,4 @@ jobs:
           release-type: simple
           package-name: fruits
           versioning-strategy: always-bump-patch
+          changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false},{"type": "build", "section": "Build System", "hidden": false}]'
