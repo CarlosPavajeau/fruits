@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.0.1](https://github.com/cantte/fruits/compare/v1.0.0...v1.0.1) (2022-10-16)
+
+
+### Miscellaneous
+
+* add versions.txt ([8bc6168](https://github.com/cantte/fruits/commit/8bc61682746b79bcda61abbbf4bf2e8210642e82))
+* **main:** release 1.0.1-SNAPSHOT ([#3](https://github.com/cantte/fruits/issues/3)) ([ee0116a](https://github.com/cantte/fruits/commit/ee0116a3edf5fdf62558fa6d4772d8d57187a965))
+* **main:** release 1.0.1-SNAPSHOT ([#4](https://github.com/cantte/fruits/issues/4)) ([8d8b348](https://github.com/cantte/fruits/commit/8d8b3485425fa067598db6f5a9e63f411fa5f2d0))
+* **main:** release 1.0.1-SNAPSHOT ([#5](https://github.com/cantte/fruits/issues/5)) ([d3568cf](https://github.com/cantte/fruits/commit/d3568cfb4751099f3356393d7c463bbe61420b91))
+* **main:** release 1.0.1-SNAPSHOT ([#6](https://github.com/cantte/fruits/issues/6)) ([12ba4ce](https://github.com/cantte/fruits/commit/12ba4ce27f2ac0acfb0377b43345f0995d7ecf80))
+* update versions.txt ([13547de](https://github.com/cantte/fruits/commit/13547deef2b7cadc0e7bd4151a1da3682f976ac4))
+
+
+### Build System
+
+* **deps:** update project version ([2214534](https://github.com/cantte/fruits/commit/2214534c1eb39da3e7f536fe4828f173bcc02441))
+* set source compatibility to Java 11 ([5fa2772](https://github.com/cantte/fruits/commit/5fa2772ef46178fc949f4e57e5623196816d35e8))
+* set source compatibility to Java 17 ([7aa66a4](https://github.com/cantte/fruits/commit/7aa66a456df6873350956792f53094fb779c3fee))
+* update project version ([e3cdaba](https://github.com/cantte/fruits/commit/e3cdaba2f5e2a3e1ff68fe463608be7a17a54219))
+
 ## [1.0.0](https://github.com/cantte/fruits/compare/v0.1.1...v1.0.0) (2022-10-16)
 
 
