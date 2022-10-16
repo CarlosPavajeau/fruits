@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - main
+name: release-please
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+
+    permissions: write-all
+
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: java
+          package-name: fruits
