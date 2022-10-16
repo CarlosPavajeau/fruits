@@ -11,7 +11,7 @@ import spock.lang.Specification
 @MicronautTest
 class FruitControllerSpec extends Specification implements TestPropertyProvider {
 
-    static MongoDBContainer mongo = new MongoDBContainer(DockerImageName.parse("mongo:latest"))
+    static MongoDBContainer mongo = new MongoDBContainer(DockerImageName.parse("mongo:5.0.12"))
             .withExposedPorts(27017)
 
     @Inject
