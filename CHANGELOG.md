@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/cantte/fruits/compare/v1.2.0...v1.2.1) (2022-10-17)
+
+
+### Bug Fixes
+
+* update secret names ([355712f](https://github.com/cantte/fruits/commit/355712f8e4fa111d4568a6d58ff3ae24c05c0e64))
+
 ## [1.2.0](https://github.com/cantte/fruits/compare/v1.1.0...v1.2.0) (2022-10-17)
 
 
