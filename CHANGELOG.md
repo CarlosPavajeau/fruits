@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/cantte/fruits/compare/v1.1.0...v1.2.0) (2022-10-17)
+
+
+### Features
+
+* update publish job ([25c9824](https://github.com/cantte/fruits/commit/25c982439d7caad502bca5aaeb7086f8b76d0169))
+
 ## [1.1.0](https://github.com/cantte/fruits/compare/v1.0.1...v1.1.0) (2022-10-17)
 
 
