@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/cantte/fruits/compare/v1.2.1...v1.2.2) (2022-10-17)
+
+
+### Bug Fixes
+
+* **ci:** build layers ([9d8349b](https://github.com/cantte/fruits/commit/9d8349b84e37dc49ee7b179c855bcd7d2737b421))
+
 ## [1.2.1](https://github.com/cantte/fruits/compare/v1.2.0...v1.2.1) (2022-10-17)
 
 
