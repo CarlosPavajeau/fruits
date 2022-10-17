@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/cantte/fruits/compare/v1.0.1...v1.1.0) (2022-10-17)
+
+
+### Features
+
+* use a personal token on release workflow ([bffa62b](https://github.com/cantte/fruits/commit/bffa62b4b8cc41ea225bb3c8d6fbe6c76b5c1933))
+
 ## [1.0.1](https://github.com/cantte/fruits/compare/v1.0.0...v1.0.1) (2022-10-16)
 
 
